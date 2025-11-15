@@ -1,51 +1,52 @@
 export default function ExperiencePage() {
   const experiences = [
     {
-      role: "Senior Blockchain Developer",
-      company: "Web3 Startup Inc.",
-      period: "2022 - Present",
+      role: "DeFi Software Engineer",
+      company: "GlueX Protocol",
+      period: "Jan 2025 - Aug 2025",
       description:
-        "Leading blockchain development initiatives, architecting smart contracts for DeFi protocols, and building scalable Web3 applications. Mentoring junior developers and conducting security audits.",
+        "Implemented core AMM logic for CPAMMs and CLAMMs, developed generalized APY calculations, optimized CowSwap solver performance, and built an arbitrage trading bot using Router APIs.",
       highlights: [
-        "Architected and deployed $50M+ TVL DeFi protocol",
-        "Reduced gas costs by 40% through optimization",
-        "Led team of 5 blockchain developers",
+        "Replicated CPAMM & CLAMM math across liquidity modules",
+        "Built generalized APY formula for accurate TVL & yield",
+        "Reduced solver external calls from 8000 → 1500 per auction",
+        "Developed profitable cross-DEX arbitrage bot",
       ],
     },
     {
-      role: "Blockchain Developer",
-      company: "Crypto Solutions Ltd.",
-      period: "2020 - 2022",
+      role: "Blockchain Developer Intern",
+      company: "SimplyFi Softech",
+      period: "Jul 2024 - Dec 2024",
       description:
-        "Developed and deployed multiple smart contracts on Ethereum mainnet. Built NFT marketplace handling 10K+ transactions. Implemented automated testing and CI/CD pipelines.",
+        "Worked on chain abstraction using ZetaChain modules and implemented account abstraction with intent architecture using Paymaster.",
       highlights: [
-        "Launched successful NFT marketplace with 50K+ users",
-        "Deployed 20+ production smart contracts",
-        "Integrated multiple wallet providers and Web3 libraries",
+        "Researched & tested ZetaChain modules for interoperability",
+        "Implemented account abstraction with Paymaster integration",
       ],
     },
     {
-      role: "Full Stack Developer",
-      company: "Tech Innovations Co.",
-      period: "2018 - 2020",
+      role: "Full Stack Developer Intern",
+      company: "DAN Labs",
+      period: "Mar 2024 - Aug 2024",
       description:
-        "Worked on web applications using React and Node.js. Transitioned to blockchain development by building proof-of-concept dApps. Contributed to internal blockchain education initiatives.",
+        "Built on-chain data validation middlewares, indexing pipelines, analytics integrations, and backend APIs powering scoring and utility-claim systems.",
       highlights: [
-        "Built 10+ full-stack web applications",
-        "Developed first company blockchain POC",
-        "Trained 15+ team members on Web3 technologies",
+        "Created middlewares to validate on-chain data from logs & receipts",
+        "Designed scalable indexing pipeline using blockchain RPCs",
+        "Developed user scoring & utility claim APIs",
+        "Integrated Hotjar, Segment & Discord widgets for analytics",
       ],
     },
     {
-      role: "Junior Developer",
-      company: "StartupXYZ",
-      period: "2017 - 2018",
+      role: "Backend Developer",
+      company: "Fringale",
+      period: "Nov 2023 - Mar 2024",
       description:
-        "Started my career building web applications and learning software development best practices. Worked with modern JavaScript frameworks and agile methodologies.",
+        "Started career building backend systems using modern JavaScript frameworks and working with agile development practices.",
       highlights: [
-        "Contributed to 5+ major product releases",
-        "Improved test coverage by 30%",
-        "Learned foundational software engineering principles",
+        "Contributed to multiple backend features & product cycles",
+        "Improved test coverage and backend reliability",
+        "Gained strong foundational engineering principles",
       ],
     },
   ];
@@ -58,7 +59,6 @@ export default function ExperiencePage() {
       </p>
 
       <div className="relative">
-        {/* Timeline line */}
         <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-800"></div>
 
         <div className="space-y-6 ml-8">

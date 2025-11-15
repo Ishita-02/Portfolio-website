@@ -4,18 +4,13 @@ import { useState } from "react";
 import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 export default function ContactPage() {
+  const [formResult, setFormResult] = useState("");
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log("Form submitted:", formData);
-    alert("Message sent! (This is a demo - implement your email service)");
-  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -24,6 +19,29 @@ export default function ContactPage() {
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  // ✅ Web3Forms submit
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+
+    const data = new FormData(form);
+    data.append("access_key", process.env.NEXT_PUBLIC_ACCESS_KEY!);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: data,
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setFormResult("Message sent successfully!");
+      form.reset();
+    } else {
+      setFormResult("Something went wrong. Please try again.");
+    }
   };
 
   const contactInfo = [
@@ -86,62 +104,56 @@ export default function ContactPage() {
         })}
       </div>
 
-      {/* Contact Form */}
+      {/* Contact Form with Web3Forms */}
       <div className="bg-card p-10 rounded-xl border border-gray-800 max-w-3xl">
         <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+
         <form onSubmit={handleSubmit} className="space-y-5">
+          <input type="hidden" name="access_key" value="5e703ee5-6ef4-4f01-bb15-a61f48221505" />
+
           <div>
-            <label
-              htmlFor="name"
-              className="block text-sm mb-2 text-gray-400"
-            >
+            <label htmlFor="name" className="block text-sm mb-2 text-gray-400">
               Name
             </label>
             <input
               type="text"
               id="name"
               name="name"
+              required
               value={formData.name}
               onChange={handleChange}
-              required
               placeholder="Your name"
               className="w-full px-4 py-3 bg-background border border-gray-800 rounded-lg text-white text-base focus:border-accent focus:outline-none transition-colors"
             />
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block text-sm mb-2 text-gray-400"
-            >
+            <label htmlFor="email" className="block text-sm mb-2 text-gray-400">
               Email
             </label>
             <input
               type="email"
               id="email"
               name="email"
+              required
               value={formData.email}
               onChange={handleChange}
-              required
               placeholder="your.email@example.com"
               className="w-full px-4 py-3 bg-background border border-gray-800 rounded-lg text-white text-base focus:border-accent focus:outline-none transition-colors"
             />
           </div>
 
           <div>
-            <label
-              htmlFor="message"
-              className="block text-sm mb-2 text-gray-400"
-            >
+            <label htmlFor="message" className="block text-sm mb-2 text-gray-400">
               Message
             </label>
             <textarea
               id="message"
               name="message"
-              value={formData.message}
-              onChange={handleChange}
               required
               rows={5}
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your message..."
               className="w-full px-4 py-3 bg-background border border-gray-800 rounded-lg text-white text-base focus:border-accent focus:outline-none transition-colors resize-vertical"
             />
@@ -153,6 +165,10 @@ export default function ContactPage() {
           >
             Send Message
           </button>
+
+          {formResult && (
+            <p className="text-sm text-accent mt-3">{formResult}</p>
+          )}
         </form>
       </div>
     </div>

@@ -1,3 +1,5 @@
+import { ExternalLink, Github } from "lucide-react";
+
 export default function ProjectsPage() {
   const projects = [
     {
@@ -7,22 +9,28 @@ export default function ProjectsPage() {
         "A comprehensive decentralized lending and borrowing platform with automated interest rates, collateral management, and liquidation mechanisms. Built with advanced smart contract security practices.",
       tags: ["Solidity", "NextJS", "Web3.js", "Hardhat", "Python", "IPFS"],
       category: "DeFi",
+      githubLink: "https://github.com/Ishita-02/InvoiceSME",
+      liveLink: "https://invoicesme.vercel.app/",
     },
     {
       id: 2,
-      title: "NFT Marketplace",
+      title: "Dataset Collaboration",
       description:
         "Full-featured NFT marketplace enabling creators to mint, list, and trade digital assets. Features include auction systems, royalty distribution, and IPFS integration for decentralized storage.",
-      tags: ["Solidity", "Next.js", "IPFS", "Ethers.js", "OpenZeppelin"],
+      tags: ["Solidity", "Next.js", "IPFS", "Ethers.js", "Javascript"],
       category: "NFT",
+      githubLink: "https://github.com/Ishita-02/Decentralized-Dataset-Collaboration",
+      liveLink: "https://unfold-hackathon.vercel.app/",
     },
     {
       id: 3,
-      title: "DAO Governance Platform",
+      title: "Supply Chain Dapp",
       description:
         "Decentralized autonomous organization with on-chain voting, proposal creation, and treasury management. Implements quadratic voting and time-locked execution for security.",
-      tags: ["Solidity", "TypeScript", "React", "Subgraph", "Snapshot"],
+      tags: ["Solidity", "JavaScript", "React", "Google Maps API", "Snapshot"],
       category: "DAO",
+      githubLink: "https://github.com/Ishita-02/Supply-Chain-Dapp",
+      liveLink: "https://supply-chain-dapp-chi.vercel.app/",
     },
     {
       id: 4,
@@ -31,6 +39,8 @@ export default function ProjectsPage() {
         "Automated market maker (AMM) style decentralized exchange with liquidity pools, yield farming, and token swapping capabilities. Optimized gas efficiency and MEV protection.",
       tags: ["Solidity", "Vue.js", "Web3Modal", "Uniswap V2"],
       category: "DeFi",
+      githubLink: "https://github.com/yourusername/token-swap-dex",
+      liveLink: "https://token-swap-dex.vercel.app",
     },
     {
       id: 5,
@@ -39,6 +49,8 @@ export default function ProjectsPage() {
         "Enterprise-grade multi-signature wallet with customizable approval thresholds, transaction queuing, and support for multiple blockchain networks.",
       tags: ["Solidity", "React", "Gnosis Safe", "Web3.js"],
       category: "Security",
+      githubLink: "https://github.com/yourusername/multisig-wallet",
+      liveLink: "https://multisig-wallet.vercel.app",
     },
   ];
 
@@ -61,10 +73,12 @@ export default function ProjectsPage() {
                 {project.category}
               </span>
             </div>
+            
             <p className="text-muted mb-5 leading-relaxed">
               {project.description}
             </p>
-            <div className="flex flex-wrap gap-2">
+            
+            <div className="flex flex-wrap gap-2 mb-5">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
@@ -73,6 +87,28 @@ export default function ProjectsPage() {
                   {tag}
                 </span>
               ))}
+            </div>
+
+            {/* Project Links */}
+            <div className="flex gap-4 pt-4 border-t border-gray-800">
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-background border border-gray-800 rounded-lg text-sm font-medium hover:border-accent transition-colors"
+              >
+                <Github size={16} />
+                View Code
+              </a>
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-accent text-background rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
+              >
+                <ExternalLink size={16} />
+                Live Demo
+              </a>
             </div>
           </div>
         ))}

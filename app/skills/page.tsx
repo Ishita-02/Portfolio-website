@@ -21,8 +21,6 @@ export default function SkillsPage() {
         "TypeScript",
         "JavaScript",
         "Tailwind CSS",
-        "Redux",
-        "React Query",
         "Vite",
       ],
     },
@@ -86,7 +84,6 @@ export default function SkillsPage() {
         ))}
       </div>
 
-      {/* Certifications & Achievements */}
       <div className="bg-card p-8 rounded-xl border border-gray-800">
         <h3 className="text-2xl font-semibold mb-4 text-accent">
           Certifications & Achievements
