@@ -46,13 +46,13 @@ export default function HomePage() {
             About Me
           </h2>
           <p className="text-base leading-relaxed text-gray-400 mb-5">
-            I'm a passionate Blockchain Developer with extensive experience in building decentralized applications 
-            and smart contracts. Specialized in Ethereum, Solidity, Web3.js, and various blockchain protocols. 
-            I love solving complex problems and creating innovative solutions in the Web3 space.
+            I’m an experienced Blockchain Developer specializing in smart contract development, DeFi mechanics, and full-stack Web3 applications. My work includes implementing AMM logic (CPAMM & CLAMM), building accurate APY and TVL models, developing arbitrage execution bots, and optimizing solver workflows for on-chain performance.
           </p>
           <p className="text-base leading-relaxed text-gray-400 mb-6">
-            With a strong foundation in both frontend and backend development, I bring a full-stack perspective 
-            to blockchain projects, ensuring seamless integration between decentralized systems and user interfaces.
+            I have hands-on experience across Solidity, TypeScript, React/Next.js, Node.js, Hardhat, Foundry, and tools like Tenderly and OpenZeppelin. Alongside contract development, I’ve worked on indexing pipelines, account abstraction (Paymaster integration), ZetaChain modules, and decentralized marketplaces and RWA solutions such as invoice tokenization.
+          </p>
+          <p className="text-base leading-relaxed text-gray-400 mb-6">
+            With a strong foundation in both backend and frontend, I build reliable, secure, and scalable Web3 applications end to end—focusing on clean architecture, correctness, and real-world usability.
           </p>
 
           {/* Resume Download Button */}
@@ -68,7 +68,7 @@ export default function HomePage() {
       </div>
 
       {/* Featured Projects */}
-      <h2 className="text-4xl font-bold mb-6">Featured Projects</h2>
+      {/* <h2 className="text-4xl font-bold mb-6">Featured Projects</h2>
       <div className="grid grid-cols-3 gap-6">
         {featuredProjects.map((project) => (
           <div
@@ -82,16 +82,16 @@ export default function HomePage() {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
 
-      <div className="mt-8 text-center">
+      {/* <div className="mt-8 text-center">
         <Link
           href="/projects"
           className="inline-block px-6 py-3 bg-card border border-gray-800 rounded-lg text-sm font-medium hover:border-accent transition-colors"
         >
           View All Projects →
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

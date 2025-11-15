@@ -6,9 +6,9 @@ export default function ProjectsPage() {
       id: 1,
       title: "InvoiceSME",
       description:
-        "A comprehensive decentralized lending and borrowing platform with automated interest rates, collateral management, and liquidation mechanisms. Built with advanced smart contract security practices.",
-      tags: ["Solidity", "NextJS", "Web3.js", "Hardhat", "Python", "IPFS"],
-      category: "DeFi",
+        "Tokenizes business invoices using ERC-1155 to unlock real-world liquidity on-chain. Features automated risk scoring with an AI agent, GST verification, and Worldcoin identity checks for secure financing.",
+      tags: ["Solidity", "Next.js", "Web3.js", "Hardhat", "Python", "IPFS", "Javascript"],
+      category: "RWA / DeFi",
       githubLink: "https://github.com/Ishita-02/InvoiceSME",
       liveLink: "https://invoicesme.vercel.app/",
     },
@@ -16,9 +16,9 @@ export default function ProjectsPage() {
       id: 2,
       title: "Dataset Collaboration",
       description:
-        "Full-featured NFT marketplace enabling creators to mint, list, and trade digital assets. Features include auction systems, royalty distribution, and IPFS integration for decentralized storage.",
-      tags: ["Solidity", "Next.js", "IPFS", "Ethers.js", "Javascript"],
-      category: "NFT",
+        "Built a decentralized ecosystem where data creators, curators, and verifiers collaborate through staking-based incentives. Ensures quality datasets using tokenized workflows and on-chain verification processes.",
+      tags: ["Solidity", "Next.js", "IPFS", "Web3.js", "Javascript", "Hardhat"],
+      category: "DApp",
       githubLink: "https://github.com/Ishita-02/Decentralized-Dataset-Collaboration",
       liveLink: "https://unfold-hackathon.vercel.app/",
     },
@@ -26,32 +26,32 @@ export default function ProjectsPage() {
       id: 3,
       title: "Supply Chain Dapp",
       description:
-        "Decentralized autonomous organization with on-chain voting, proposal creation, and treasury management. Implements quadratic voting and time-locked execution for security.",
-      tags: ["Solidity", "JavaScript", "React", "Google Maps API", "Snapshot"],
-      category: "DAO",
+        "Tracks product movement end-to-end using blockchain-backed records and real-time map integration. Enables transparent monitoring of sustainability metrics and on-chain product verification.",
+      tags: ["Solidity", "JavaScript", "React", "Google Maps API"],
+      category: "DApp",
       githubLink: "https://github.com/Ishita-02/Supply-Chain-Dapp",
       liveLink: "https://supply-chain-dapp-chi.vercel.app/",
     },
-    {
-      id: 4,
-      title: "Token Swap DEX",
-      description:
-        "Automated market maker (AMM) style decentralized exchange with liquidity pools, yield farming, and token swapping capabilities. Optimized gas efficiency and MEV protection.",
-      tags: ["Solidity", "Vue.js", "Web3Modal", "Uniswap V2"],
-      category: "DeFi",
-      githubLink: "https://github.com/yourusername/token-swap-dex",
-      liveLink: "https://token-swap-dex.vercel.app",
-    },
-    {
-      id: 5,
-      title: "Multi-Sig Wallet",
-      description:
-        "Enterprise-grade multi-signature wallet with customizable approval thresholds, transaction queuing, and support for multiple blockchain networks.",
-      tags: ["Solidity", "React", "Gnosis Safe", "Web3.js"],
-      category: "Security",
-      githubLink: "https://github.com/yourusername/multisig-wallet",
-      liveLink: "https://multisig-wallet.vercel.app",
-    },
+    // {
+    //   id: 4,
+    //   title: "Token Swap DEX",
+    //   description:
+    //     "Automated market maker (AMM) style decentralized exchange with liquidity pools, yield farming, and token swapping capabilities. Optimized gas efficiency and MEV protection.",
+    //   tags: ["Solidity", "Vue.js", "Web3Modal", "Uniswap V2"],
+    //   category: "DeFi",
+    //   githubLink: "https://github.com/yourusername/token-swap-dex",
+    //   liveLink: "https://token-swap-dex.vercel.app",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Multi-Sig Wallet",
+    //   description:
+    //     "Enterprise-grade multi-signature wallet with customizable approval thresholds, transaction queuing, and support for multiple blockchain networks.",
+    //   tags: ["Solidity", "React", "Gnosis Safe", "Web3.js"],
+    //   category: "Security",
+    //   githubLink: "https://github.com/yourusername/multisig-wallet",
+    //   liveLink: "https://multisig-wallet.vercel.app",
+    // },
   ];
 
   return (
