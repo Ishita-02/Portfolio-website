@@ -18,7 +18,7 @@ export default function Sidebar() {
   return (
     <aside className="w-[260px] bg-card border-r border-gray-800 p-6 flex flex-col">
       <div className="mb-12">
-        <h2 className="text-2xl font-bold text-accent mb-2">Your Name</h2>
+        <h2 className="text-2xl font-bold text-accent mb-2">Ishita Agarwal</h2>
         <p className="text-sm text-muted">Blockchain Developer</p>
       </div>
 
@@ -45,7 +45,7 @@ export default function Sidebar() {
       </nav>
 
       <div className="pt-6 border-t border-gray-800">
-        <p className="text-xs text-gray-600 text-center">© 2024 Your Name</p>
+        <p className="text-xs text-gray-600 text-center">© 2025 Ishita Agarwal</p>
       </div>
     </aside>
   );

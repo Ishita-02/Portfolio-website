@@ -1,3 +1,6 @@
+/* eslint-disable */
+/* @tailwind is handled by PostCSS */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

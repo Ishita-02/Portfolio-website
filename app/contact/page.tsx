@@ -30,26 +30,26 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com",
+      value: "ishitagrawal0207@gmail.com",
+      link: "mailto:ishitagrawal0207@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/yourname",
-      link: "https://linkedin.com/in/yourname",
+      value: "linkedin.com/in/ishita-agarwal-47180321a/",
+      link: "https://www.linkedin.com/in/ishita-agarwal-47180321a/",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/yourname",
-      link: "https://github.com/yourname",
+      value: "github.com/Ishita-02",
+      link: "https://github.com/Ishita-02",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      value: "@yourhandle",
-      link: "https://twitter.com/yourhandle",
+      value: "@IshitaA20825854",
+      link: "https://x.com/IshitaA20825854",
     },
   ];
 

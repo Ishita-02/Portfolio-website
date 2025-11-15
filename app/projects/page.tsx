@@ -2,10 +2,10 @@ export default function ProjectsPage() {
   const projects = [
     {
       id: 1,
-      title: "DeFi Lending Platform",
+      title: "InvoiceSME",
       description:
         "A comprehensive decentralized lending and borrowing platform with automated interest rates, collateral management, and liquidation mechanisms. Built with advanced smart contract security practices.",
-      tags: ["Solidity", "Ethereum", "React", "Web3.js", "Hardhat"],
+      tags: ["Solidity", "NextJS", "Web3.js", "Hardhat", "Python", "IPFS"],
       category: "DeFi",
     },
     {

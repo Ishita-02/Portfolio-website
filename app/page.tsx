@@ -36,7 +36,7 @@ export default function HomePage() {
         <div className="w-36 h-36 rounded-full bg-accent flex-shrink-0 flex items-center justify-center text-5xl font-bold text-background">
           {/* Replace with actual image: */}
           {/* <Image src="/avatar.jpg" alt="Your Name" width={144} height={144} className="rounded-full" /> */}
-          YN
+          IA
         </div>
 
         {/* About Content */}
@@ -57,7 +57,7 @@ export default function HomePage() {
 
           {/* Resume Download Button */}
           <a
-            href="/resume.pdf"
+            href="/Ishita Agarwal Resume.pdf"
             download
             className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background rounded-lg text-base font-semibold hover:opacity-90 transition-opacity"
           >

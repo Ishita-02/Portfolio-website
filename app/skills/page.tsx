@@ -4,17 +4,12 @@ export default function SkillsPage() {
       category: "Blockchain",
       skills: [
         "Solidity",
-        "Smart Contracts",
-        "Ethereum",
         "Web3.js",
         "Ethers.js",
         "Hardhat",
         "Truffle",
         "OpenZeppelin",
         "IPFS",
-        "Polygon",
-        "BSC",
-        "Layer 2 Solutions",
       ],
     },
     {
@@ -35,12 +30,9 @@ export default function SkillsPage() {
       skills: [
         "Node.js",
         "Express",
-        "GraphQL",
         "REST APIs",
         "MongoDB",
         "PostgreSQL",
-        "Prisma",
-        "Socket.io",
       ],
     },
     {
@@ -54,9 +46,6 @@ export default function SkillsPage() {
         "Remix IDE",
         "MetaMask",
         "Ganache",
-        "Jest",
-        "Mocha",
-        "Chai",
       ],
     },
   ];
