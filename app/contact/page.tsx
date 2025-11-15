@@ -38,6 +38,8 @@ export default function ContactPage() {
 
     if (result.success) {
       setFormResult("Message sent successfully!");
+      window.alert("Message sent successfully!")
+      window.location.reload();
       form.reset();
     } else {
       setFormResult("Something went wrong. Please try again.");
