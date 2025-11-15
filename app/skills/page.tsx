@@ -7,6 +7,7 @@ export default function SkillsPage() {
         "Web3.js",
         "Ethers.js",
         "Hardhat",
+        "Foundry",
         "Truffle",
         "OpenZeppelin",
         "IPFS",
