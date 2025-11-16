@@ -21,7 +21,6 @@ export default function ContactPage() {
     });
   };
 
-  // ✅ Web3Forms submit
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;

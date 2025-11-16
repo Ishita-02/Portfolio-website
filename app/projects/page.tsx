@@ -32,16 +32,15 @@ export default function ProjectsPage() {
       githubLink: "https://github.com/Ishita-02/Supply-Chain-Dapp",
       liveLink: "https://supply-chain-dapp-chi.vercel.app/",
     },
-    // {
-    //   id: 4,
-    //   title: "Token Swap DEX",
-    //   description:
-    //     "Automated market maker (AMM) style decentralized exchange with liquidity pools, yield farming, and token swapping capabilities. Optimized gas efficiency and MEV protection.",
-    //   tags: ["Solidity", "Vue.js", "Web3Modal", "Uniswap V2"],
-    //   category: "DeFi",
-    //   githubLink: "https://github.com/yourusername/token-swap-dex",
-    //   liveLink: "https://token-swap-dex.vercel.app",
-    // },
+    {
+      id: 4,
+      title: "Securing Data through sharding",
+      description:
+        "Implements secure data storage by splitting files into encrypted shards and distributing them across multiple folders. Enhances confidentiality, integrity, and fault tolerance using Java-based cryptographic primitives.",
+      tags: ["Java", "Cryptography"],
+      category: "Security",
+      githubLink: "https://github.com/Ishita-02/Securing-data-through-sharding",
+    },
     // {
     //   id: 5,
     //   title: "Multi-Sig Wallet",
