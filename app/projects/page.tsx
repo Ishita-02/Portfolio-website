@@ -99,15 +99,17 @@ export default function ProjectsPage() {
                 <Github size={16} />
                 View Code
               </a>
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-accent text-background rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
-              >
-                <ExternalLink size={16} />
-                Live Demo
-              </a>
+              {project.liveLink && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-accent text-background rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
+                >
+                  <ExternalLink size={16} />
+                  Live Demo
+                </a>
+              )}
             </div>
           </div>
         ))}

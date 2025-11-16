@@ -32,13 +32,9 @@ export default function HomePage() {
 
       {/* About Me Section */}
       <div className="bg-card p-10 rounded-2xl border border-gray-800 mb-12 flex gap-8 items-start">
-        {/* Avatar */}
-        <div className="w-36 h-36 rounded-full bg-accent flex-shrink-0 flex items-center justify-center text-5xl font-bold text-background">
-          {/* Replace with actual image: */}
-          {/* <Image src="/avatar.jpg" alt="Your Name" width={144} height={144} className="rounded-full" /> */}
-          IA
+        <div className="w-36 h-36 rounded-full overflow-hidden flex-shrink-0">
+          <Image src="/avatar2.png" alt="Ishita Agarwal" width={144} height={144} className="rounded-full object-cover" />
         </div>
-
         {/* About Content */}
         <div className="flex-1">
           <h2 className="text-3xl font-bold mb-4 flex items-center gap-3">
