@@ -67,14 +67,6 @@ export default function SkillsPage() {
     },
   ];
 
-  // const achievements = [
-  //   "Built on-chain indexing pipelines",
-  //   "Developed multiple production-grade smart contracts",
-  //   "Winner & Finalist at multiple hackathons (ETH Global & ETHOnline)",
-  //   "Led development of advanced DeFi & APY systems",
-  //   "Active contributor to full-stack Web3 projects",
-  // ];
-
   const certificates = [
     {
       title: "Uniswap v4",
@@ -98,25 +90,35 @@ export default function SkillsPage() {
     },
   ];
 
+  // const achievements = [
+  //   "Built on-chain indexing pipelines",
+  //   "Developed multiple production-grade smart contracts",
+  //   "Winner & Finalist at multiple hackathons (ETH Global & ETHOnline)",
+  //   "Led development of advanced DeFi & APY systems",
+  //   "Active contributor to full-stack Web3 projects",
+  // ];
+
 
   return (
     <div>
-      <h1 className="text-5xl font-bold mb-4">Skills & Technologies</h1>
-      <p className="text-base text-muted mb-8">
+      {/* Responsive Typography: Scaled down for mobile */}
+      <h1 className="text-4xl sm:text-5xl font-bold mb-4">Skills & Technologies</h1>
+      <p className="text-base text-muted mb-6 sm:mb-8">
         My technical expertise and tools I work with
       </p>
 
-      <div className="grid grid-cols-2 gap-8 mb-12">
+      {/* Skills Grid: Single column on small screens, two columns on medium, three on large */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mb-12">
         {skillCategories.map((group) => (
           <div key={group.category}>
-            <h3 className="text-2xl font-semibold mb-5 text-accent">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-5 text-accent">
               {group.category}
             </h3>
-            <div className="flex flex-wrap gap-2.5">
+            <div className="flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-4 py-2.5 bg-card border border-gray-800 rounded-lg text-sm font-medium hover:border-accent transition-colors"
+                  className="px-3 sm:px-4 py-2 bg-card border border-gray-800 rounded-lg text-sm font-medium hover:border-accent transition-colors whitespace-nowrap"
                 >
                   {skill}
                 </span>
@@ -126,34 +128,35 @@ export default function SkillsPage() {
         ))}
       </div>
 
-      <div className="bg-card p-8 rounded-xl border border-gray-800">
-  <h3 className="text-2xl font-semibold mb-4 text-accent">
-    Certificates (Cyfrin Updraft)
-      </h3>
+      {/* Certificates Section: Adjusted padding and margin */}
+      <div className="bg-card p-6 sm:p-8 rounded-xl border border-gray-800">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-accent">
+          Certificates (Cyfrin Updraft)
+        </h3>
 
-      <ul className="space-y-3 text-gray-400 text-base">
-        {certificates.map((cert, index) => (
-          <li key={index} className="flex items-start">
-            <span className="text-accent mr-3 mt-1">✓</span>
-            <div>
-              <p className="font-medium text-white">{cert.title}</p>
-              <p className="text-sm text-gray-500">Completed: {cert.completed}</p>
+        <ul className="space-y-3 text-gray-400 text-base">
+          {certificates.map((cert, index) => (
+            <li key={index} className="flex items-start">
+              <span className="text-accent mr-3 mt-1 text-lg">✓</span>
+              <div>
+                <p className="font-medium text-white">{cert.title}</p>
+                <p className="text-sm text-gray-500">Completed: {cert.completed}</p>
 
-              {cert.link && (
-                <a
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-accent underline"
-                >
-                  View Certificate
-                </a>
-              )}
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+                {cert.link && (
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-accent underline hover:text-white"
+                  >
+                    View Certificate
+                  </a>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
 
     </div>
   );

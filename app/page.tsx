@@ -23,21 +23,25 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1 className="text-6xl font-bold mb-4 leading-tight">
+      {/* Headings - Adjusted font size for smaller screens for better readability */}
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
         Welcome to My Portfolio
       </h1>
-      <p className="text-xl text-muted mb-12">
+      <p className="text-lg sm:text-xl text-muted mb-8 sm:mb-12">
         Building decentralized solutions for the future
       </p>
 
-      {/* About Me Section */}
-      <div className="bg-card p-10 rounded-2xl border border-gray-800 mb-12 flex gap-8 items-start">
-        <div className="w-36 h-36 rounded-full overflow-hidden flex-shrink-0">
+      {/* About Me Section - Key responsive changes applied here */}
+      <div className="bg-card p-6 sm:p-10 rounded-2xl border border-gray-800 mb-12 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
+        
+        {/* Image Container - Center the image on mobile */}
+        <div className="w-36 h-36 rounded-full overflow-hidden flex-shrink-0 mb-4 md:mb-0">
           <Image src="/avatar2.png" alt="Ishita Agarwal" width={144} height={144} className="rounded-full object-cover" />
         </div>
+        
         {/* About Content */}
         <div className="flex-1">
-          <h2 className="text-3xl font-bold mb-4 flex items-center gap-3">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center justify-center md:justify-start gap-3">
             <User size={28} className="text-accent" />
             About Me
           </h2>
@@ -48,28 +52,30 @@ export default function HomePage() {
             I have hands-on experience across Solidity, TypeScript, React/Next.js, Node.js, Hardhat, Foundry, and tools like Tenderly and OpenZeppelin. Alongside contract development, I’ve worked on indexing pipelines, account abstraction (Paymaster integration), ZetaChain modules, and decentralized marketplaces and RWA solutions such as invoice tokenization.
           </p>
           <p className="text-base leading-relaxed text-gray-400 mb-6">
-            With a strong foundation in both backend and frontend, I build reliable, secure, and scalable Web3 applications end to end—focusing on clean architecture, correctness, and real-world usability.
+            With a strong foundation in both backend and frontend, I build reliable, secure, and scalable Web3 applications end to end focusing on clean architecture, correctness, and real-world usability.
           </p>
 
-          {/* Resume Download Button */}
-          <a
-            href="/Ishita Agarwal Resume.pdf"
-            download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background rounded-lg text-base font-semibold hover:opacity-90 transition-opacity"
-          >
-            <Download size={18} />
-            Download Resume
-          </a>
+          {/* Resume Download Button - Center on mobile */}
+          <div className="text-center md:text-left">
+            <a
+              href="/Ishita Agarwal Resume.pdf"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background rounded-lg text-base font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Download size={18} />
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Featured Projects */}
-      {/* <h2 className="text-4xl font-bold mb-6">Featured Projects</h2>
-      <div className="grid grid-cols-3 gap-6">
+      {/* Featured Projects (Commented out in original, but responsive classes added just in case) */}
+      {/* <h2 className="text-3xl sm:text-4xl font-bold mb-6">Featured Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {featuredProjects.map((project) => (
           <div
             key={project.id}
-            className="bg-card p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors"
+            className="bg-card p-6 sm:p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors"
           >
             <div className="w-12 h-12 bg-accent/20 rounded-lg mb-4"></div>
             <h3 className="text-lg font-semibold mb-3">{project.title}</h3>

@@ -59,30 +59,35 @@ export default function ExperiencePage() {
 
   return (
     <div>
-      <h1 className="text-5xl font-bold mb-4">Experience</h1>
-      <p className="text-base text-muted mb-8">
+      {/* Responsive Typography */}
+      <h1 className="text-4xl sm:text-5xl font-bold mb-4">Experience</h1>
+      <p className="text-base text-muted mb-6 sm:mb-8">
         My professional journey in blockchain development
       </p>
 
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-800"></div>
+        {/* Timeline Line: Adjusted left margin for smaller screens */}
+        <div className="absolute left-4 sm:left-0 top-0 bottom-0 w-0.5 bg-gray-800"></div>
 
-        <div className="space-y-6 ml-8">
+        {/* Content Container: Adjusted left margin to accommodate the timeline line and dot */}
+        <div className="space-y-6 ml-8 sm:ml-8 md:ml-12">
           {experiences.map((job, index) => (
             <div
               key={index}
-              className="bg-card p-8 rounded-xl border border-gray-800 relative hover:border-gray-700 transition-colors"
+              className="bg-card p-4 sm:p-8 rounded-xl border border-gray-800 relative hover:border-gray-700 transition-colors"
             >
-              {/* Timeline dot */}
-              <div className="absolute -left-[35px] top-10 w-3 h-3 bg-accent rounded-full border-4 border-background"></div>
+              {/* Timeline dot: Adjusted position to match the new timeline line */}
+              <div className="absolute -left-4 sm:-left-[35px] top-6 sm:top-10 w-3 h-3 bg-accent rounded-full border-4 border-background"></div>
 
-              <div className="flex justify-between items-start mb-3">
+              {/* Header: Title, Company, Period, Type */}
+              <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
                 <div>
-                  <h3 className="text-2xl font-semibold mb-1">{job.role}</h3>
-                  <p className="text-base text-accent font-medium">{job.company}</p>
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-1">{job.role}</h3>
+                  <p className="text-sm sm:text-base text-accent font-medium">{job.company}</p>
                 </div>
 
-                <div className="flex gap-2 items-center">
+                {/* Duration/Type Labels: Stacked vertically on mobile, side-by-side on tablet/desktop */}
+                <div className="flex flex-col sm:flex-row gap-2 sm:items-center sm:mt-0 mt-2">
                   <span className="px-3 py-1 rounded-md text-xs font-medium bg-gray-800/60 text-gray-300 border border-gray-700/70">
                     {job.type}
                   </span>
@@ -91,7 +96,8 @@ export default function ExperiencePage() {
                   </span>
                 </div>
               </div>
-              <p className="text-gray-400 leading-relaxed text-base mb-4">
+
+              <p className="text-gray-400 leading-relaxed text-sm sm:text-base mb-4">
                 {job.description}
               </p>
 
@@ -103,7 +109,7 @@ export default function ExperiencePage() {
                   {job.highlights.map((highlight, idx) => (
                     <li
                       key={idx}
-                      className="text-sm text-gray-400 flex items-start"
+                      className="text-xs sm:text-sm text-gray-400 flex items-start"
                     >
                       <span className="text-accent mr-2 mt-0.5">•</span>
                       {highlight}
