@@ -7,9 +7,9 @@ import { Home, Briefcase, Code, Award, Mail } from "lucide-react";
 // Nav items remain the same
 const navItems = [
   { id: "home", label: "Home", icon: Home, href: "/" },
-  { id: "projects", label: "Projects", icon: Briefcase, href: "/projects" },
-  { id: "skills", label: "Skills", icon: Code, href: "/skills" },
-  { id: "experience", label: "Experience", icon: Award, href: "/experience" },
+  { id: "projects", label: "Projects", icon: Code, href: "/projects" },
+  { id: "skills", label: "Skills", icon: Award, href: "/skills" },
+  { id: "experience", label: "Experience", icon: Briefcase, href: "/experience" },
   { id: "contact", label: "Contact", icon: Mail, href: "/contact" },
 ];
 
