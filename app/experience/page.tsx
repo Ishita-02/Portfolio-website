@@ -11,7 +11,7 @@ export default function ExperiencePage() {
         "Replicated CPAMM & CLAMM math across liquidity modules",
         "Built generalized APY formula for accurate TVL & yield",
         "Reduced solver external calls from 8000 → 1500 per auction by batching, lowering node load",
-        "Built profitable cross-DEX arbitrage bot using company router APIs",
+        "Built profitable cross-DEX arbitrage bot using company router API",
       ],
     },
     {
