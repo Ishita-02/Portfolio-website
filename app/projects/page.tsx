@@ -41,16 +41,16 @@ export default function ProjectsPage() {
       category: "Security",
       githubLink: "https://github.com/Ishita-02/Securing-data-through-sharding",
     },
-    // {
-    //   id: 5,
-    //   title: "Multi-Sig Wallet",
-    //   description:
-    //     "Enterprise-grade multi-signature wallet with customizable approval thresholds, transaction queuing, and support for multiple blockchain networks.",
-    //   tags: ["Solidity", "React", "Gnosis Safe", "Web3.js"],
-    //   category: "Security",
-    //   githubLink: "https://github.com/yourusername/multisig-wallet",
-    //   liveLink: "https://multisig-wallet.vercel.app",
-    // },
+    {
+      id: 5,
+      title: "Cross chain arbitrage tracker",
+      description:
+        "A real-time dashboard that tracks cross-chain arbitrage opportunities by fetching live quotes, prices, and gas estimates through enterprise router APIs. It compares token rates across multiple chains, factors in gas costs, and highlights only the genuinely profitable arbitrage routes.",
+      tags: ["JavaScript", "React", "Web3.js", "Express", "PostgreSQL"],
+      category: "DeFi",
+      githubLink: "https://github.com/Ishita-02/Crosschain-Arbitrage-Tracker",
+      liveLink: "https://crosschain-arbitrage-tracker.vercel.app/",
+    },
   ];
 
   return (
