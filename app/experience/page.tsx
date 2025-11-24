@@ -41,7 +41,7 @@ export default function ExperiencePage() {
         "Developed user scoring & utility claim APIs",
         "Integrated Hotjar, Segment & Discord widgets for analytics",
       ],
-      techStack: ["Solidity", "Javascript", "Node.js", "Express.js", "MongoDB", "Postgres", "Next.js", "Segment", "Hotjar"],
+      techStack: ["Solidity", "Javascript", "Node.js", "Express.js", "MongoDB", "Postgres", "Next.js", "Segment", "Hotjar", "Postman"],
     },
     {
       role: "Backend Developer",
@@ -57,7 +57,7 @@ export default function ExperiencePage() {
         "Collaborated with frontend and mobile teams to ensure seamless integration",
         "Improved code structure and reliability through refactoring and modularization",
       ],
-      techStack: ["Typescript", "Node.js", "Express.js", "MongoDB"],
+      techStack: ["Typescript", "Node.js", "Express.js", "MongoDB", "Postman"],
     },
   ];
 
