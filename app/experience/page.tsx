@@ -13,6 +13,7 @@ export default function ExperiencePage() {
         "Reduced solver external calls from 8000 → 1500 per auction by batching, lowering node load",
         "Built profitable cross-DEX arbitrage bot using company router API",
       ],
+      techStack: ["Solidity", "Python", "AWS Lambda", "AWS Cloudwatch", "Tenderly"],
     },
     {
       role: "Blockchain Developer Intern",
@@ -25,6 +26,7 @@ export default function ExperiencePage() {
         "Researched & tested ZetaChain modules for interoperability",
         "Implemented account abstraction with Paymaster integration",
       ],
+      techStack: ["Solidity", "Javascript", "Hardhat"],
     },
     {
       role: "Full Stack Developer Intern",
@@ -39,6 +41,7 @@ export default function ExperiencePage() {
         "Developed user scoring & utility claim APIs",
         "Integrated Hotjar, Segment & Discord widgets for analytics",
       ],
+      techStack: ["Solidity", "Javascript", "Node.js", "Express.js", "MongoDB", "Postgres", "Next.js", "Segment", "Hotjar"],
     },
     {
       role: "Backend Developer",
@@ -54,39 +57,34 @@ export default function ExperiencePage() {
         "Collaborated with frontend and mobile teams to ensure seamless integration",
         "Improved code structure and reliability through refactoring and modularization",
       ],
+      techStack: ["Typescript", "Node.js", "Express.js", "MongoDB"],
     },
   ];
 
   return (
     <div>
-      {/* Responsive Typography */}
       <h1 className="text-4xl sm:text-5xl font-bold mb-4">Experience</h1>
       <p className="text-base text-muted mb-6 sm:mb-8">
         My professional journey in blockchain development
       </p>
 
       <div className="relative">
-        {/* Timeline Line: Adjusted left margin for smaller screens */}
         <div className="absolute left-4 sm:left-0 top-0 bottom-0 w-0.5 bg-gray-800"></div>
 
-        {/* Content Container: Adjusted left margin to accommodate the timeline line and dot */}
         <div className="space-y-6 ml-8 sm:ml-8 md:ml-12">
           {experiences.map((job, index) => (
             <div
               key={index}
               className="bg-card p-4 sm:p-8 rounded-xl border border-gray-800 relative hover:border-gray-700 transition-colors"
             >
-              {/* Timeline dot: Adjusted position to match the new timeline line */}
               <div className="absolute -left-4 sm:-left-[35px] top-6 sm:top-10 w-3 h-3 bg-accent rounded-full border-4 border-background"></div>
 
-              {/* Header: Title, Company, Period, Type */}
               <div className="flex flex-col sm:flex-row justify-between items-start mb-3 gap-2">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-semibold mb-1">{job.role}</h3>
                   <p className="text-sm sm:text-base text-accent font-medium">{job.company}</p>
                 </div>
 
-                {/* Duration/Type Labels: Stacked vertically on mobile, side-by-side on tablet/desktop */}
                 <div className="flex flex-col sm:flex-row gap-2 sm:items-center sm:mt-0 mt-2">
                   <span className="px-3 py-1 rounded-md text-xs font-medium bg-gray-800/60 text-gray-300 border border-gray-700/70">
                     {job.type}
@@ -116,6 +114,19 @@ export default function ExperiencePage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              <div className="pt-4 border-t border-gray-800/50">
+                <div className="flex flex-wrap gap-2">
+                  {job.techStack.map((tech, tIdx) => (
+                    <span 
+                      key={tIdx} 
+                      className="px-2.5 py-1 text-[10px] sm:text-xs font-medium rounded-md bg-gray-800/40 text-gray-300 border border-gray-700/50 hover:bg-gray-700/50 hover:border-gray-600 transition-colors cursor-default"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
