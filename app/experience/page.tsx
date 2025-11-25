@@ -8,9 +8,9 @@ export default function ExperiencePage() {
       description:
         "Implemented core AMM logic for CPAMMs and CLAMMs, developed generalized APY calculations, optimized CowSwap solver performance, and built an arbitrage trading bot using Router APIs.",
       highlights: [
-        "Replicated CPAMM & CLAMM math across liquidity modules",
-        "Built generalized APY formula for accurate TVL & yield",
-        "Reduced solver external calls from 8000 → 1500 per auction by batching, lowering node load",
+        "Implemented the Solidity AMM (CPAMM/CLAMM) logic in Python within the GlueX framework, integrating multiple liquidity models and running end-to-end AMM simulations; validated behavior and correctness using Tenderly",
+        "Developed a generalized APY and TVL calculation framework, implementing protocol-specific formulas to surface accurate yield and TVL metrics across multiple protocols",
+        "Reduced solver external calls from 8000 → 1500 per auction by batching requests and adding intent-level filters to eliminate non-executable or low-value intents before running deeper checks",
         "Built profitable cross-DEX arbitrage bot using company router API",
       ],
       techStack: ["Solidity", "Python", "AWS Lambda", "AWS Cloudwatch", "Tenderly"],
@@ -36,8 +36,8 @@ export default function ExperiencePage() {
       description:
         "Built on-chain data validation middlewares, indexing pipelines, analytics integrations, and backend APIs powering scoring and utility-claim systems.",
       highlights: [
-        "Created middlewares to validate on-chain data from logs & receipts",
-        "Designed scalable indexing pipeline using blockchain RPCs",
+        "Built middleware to cross-verify database state with on-chain events and logs, ensuring data consistency between the blockchain and internal storage.",
+        "Designed scalable NFT indexing pipeline using blockchain RPCs",
         "Developed user scoring & utility claim APIs",
         "Integrated Hotjar, Segment & Discord widgets for analytics",
       ],
