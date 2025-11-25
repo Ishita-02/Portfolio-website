@@ -75,7 +75,7 @@ export default function ExperiencePage() {
           {experiences.map((job, index) => (
             <div
               key={index}
-              className="bg-card p-4 sm:p-8 rounded-xl border border-gray-800 relative hover:border-gray-700 transition-colors"
+              className="bg-card p-4 sm:p-8 rounded-xl border border-gray-800 relative hover:border-gray-700 transition-colors group"
             >
               <div className="absolute -left-4 sm:-left-[35px] top-6 sm:top-10 w-3 h-3 bg-accent rounded-full border-4 border-background"></div>
 
@@ -89,7 +89,7 @@ export default function ExperiencePage() {
                   <span className="px-3 py-1 rounded-md text-xs font-medium bg-gray-800/60 text-gray-300 border border-gray-700/70">
                     {job.type}
                   </span>
-                  <span className="px-3.5 py-1.5 bg-background border border-gray-800 rounded-md text-xs text-muted whitespace-nowrap">
+                  <span className="px-3.5 py-1.5 bg-background border border-gray-800 rounded-md text-xs text-white whitespace-nowrap">
                     {job.period}
                   </span>
                 </div>
@@ -99,7 +99,7 @@ export default function ExperiencePage() {
                 {job.description}
               </p>
 
-              <div className="space-y-2">
+              <div className="space-y-2 mb-3">
                 <p className="text-sm font-semibold text-accent">
                   Key Highlights:
                 </p>
@@ -119,9 +119,9 @@ export default function ExperiencePage() {
               <div className="pt-4 border-t border-gray-800/50">
                 <div className="flex flex-wrap gap-2">
                   {job.techStack.map((tech, tIdx) => (
-                    <span 
-                      key={tIdx} 
-                      className="px-2.5 py-1 text-[10px] sm:text-xs font-medium rounded-md bg-gray-800/40 text-gray-300 border border-gray-700/50 hover:bg-gray-700/50 hover:border-gray-600 transition-colors cursor-default"
+                    <span
+                      key={tIdx}
+                      className="px-3 py-1.5 bg-background border border-gray-800 rounded text-xs font-medium text-white"
                     >
                       {tech}
                     </span>
