@@ -11,7 +11,7 @@ export default function ExperiencePage() {
         "Implemented the Solidity AMM (CPAMM/CLAMM) logic in Python within the GlueX framework, integrating multiple liquidity models and running end-to-end AMM simulations; validated behavior and correctness using Tenderly",
         "Developed a generalized APY and TVL calculation framework, implementing protocol-specific formulas to surface accurate yield and TVL metrics across multiple protocols",
         "Reduced solver external calls from 8000 → 1500 per auction by batching requests and adding intent-level filters to eliminate non-executable or low-value intents before running deeper checks",
-        "Built profitable cross-DEX arbitrage bot using company router API",
+        "Built cross-DEX arbitrage bot using company router API",
       ],
       techStack: ["Solidity", "Python", "AWS Lambda", "AWS Cloudwatch", "Tenderly"],
     },
