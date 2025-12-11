@@ -69,6 +69,11 @@ export default function SkillsPage() {
 
   const certificates = [
     {
+      title: "GMX Perpetuals Trading",
+      completed: "11/12/2025",
+      link: "https://profiles.cyfrin.io/u/ishitagrawal0207/achievements/gmx-perpetuals-trading",
+    },
+    {
       title: "Uniswap v4",
       completed: "01/10/2025",
       link: "https://profiles.cyfrin.io/u/ishitagrawal0207/achievements/uniswap-v4",
