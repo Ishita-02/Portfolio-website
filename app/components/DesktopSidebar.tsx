@@ -47,7 +47,7 @@ export default function DesktopSidebar() {
       </nav>
 
       <div className="pt-6 border-t border-gray-800">
-        <p className="text-xs text-gray-600 text-center">© 2025 Ishita Agarwal</p>
+        <p className="text-xs text-gray-600 text-center">© 2026 Ishita Agarwal</p>
       </div>
     </aside>
   );

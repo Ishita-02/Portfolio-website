@@ -4,6 +4,17 @@ export default function ProjectsPage() {
   const projects = [
     {
       id: 1,
+      title: "SyncTrade",
+      description:
+        "A copy-trading platform where users can create strategies, follow top traders, and automatically mirror trades on-chain. Built with transparent execution, strategy tracking, and non-custodial design.",
+      tags: ["Solidity", "Next.js", "Viem", "Hardhat", "Typescript", "Node.js", "Fastify", "PostgreSQL"],
+      category: "DeFi",
+      githubLink: "https://github.com/Ishita-02/SyncTrade",
+      liveLink: "https://sync-trade.vercel.app/",
+      status: "in-progress", 
+    },
+    {
+      id: 2,
       title: "InvoiceSME",
       description:
         "Tokenizes business invoices using ERC-1155 to unlock real-world liquidity on-chain. Features automated risk scoring with an AI agent, GST verification, and Worldcoin identity checks for secure financing.",
@@ -13,8 +24,8 @@ export default function ProjectsPage() {
       liveLink: "https://invoicesme.vercel.app/",
     },
     {
-      id: 2,
-      title: "Dataset Collaboration",
+      id: 3,
+      title: "DataNexus",
       description:
         "Built a decentralized ecosystem where data creators, curators, and verifiers collaborate through staking-based incentives. Ensures quality datasets using tokenized workflows and on-chain verification processes.",
       tags: ["Solidity", "Next.js", "IPFS", "Web3.js", "Javascript", "Hardhat"],
@@ -23,7 +34,7 @@ export default function ProjectsPage() {
       liveLink: "https://unfold-hackathon.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Supply Chain Dapp",
       description:
         "Tracks product movement end-to-end using blockchain-backed records and real-time map integration. Enables transparent monitoring of sustainability metrics and on-chain product verification.",
@@ -33,7 +44,7 @@ export default function ProjectsPage() {
       liveLink: "https://supply-chain-dapp-chi.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Securing Data through sharding",
       description:
         "Implements secure data storage by splitting files into encrypted shards and distributing them across multiple folders. Enhances confidentiality, integrity, and fault tolerance using Java-based cryptographic primitives.",
@@ -42,7 +53,7 @@ export default function ProjectsPage() {
       githubLink: "https://github.com/Ishita-02/Securing-data-through-sharding",
     },
     {
-      id: 5,
+      id: 6,
       title: "Cross chain arbitrage tracker",
       description:
         "A real-time dashboard that tracks cross-chain arbitrage opportunities by fetching live quotes, prices, and gas estimates through enterprise router APIs. It compares token rates across multiple chains, factors in gas costs, and highlights only the genuinely profitable arbitrage routes.",
@@ -66,13 +77,19 @@ export default function ProjectsPage() {
             key={project.id}
             className="bg-card p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors"
           >
-            <div className="flex justify-between items-start mb-4">
+            <div className="flex items-center gap-3 mb-4">
               <h3 className="text-2xl font-semibold">{project.title}</h3>
-              <span className="px-3 py-1 bg-accent text-background rounded-md text-xs font-semibold">
+
+              {project.status === "in-progress" && (
+                <span className="px-2 py-1 text-xs font-semibold rounded-md bg-yellow-500/10 text-yellow-400 border border-yellow-500/30">
+                  Work in Progress
+                </span>
+              )}
+
+              <span className="ml-auto px-3 py-1 bg-accent text-background rounded-md text-xs font-semibold">
                 {project.category}
               </span>
             </div>
-            
             <p className="text-muted mb-5 leading-relaxed">
               {project.description}
             </p>
