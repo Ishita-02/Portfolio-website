@@ -1,6 +1,20 @@
 export default function ExperiencePage() {
   const experiences = [
     {
+      role: "Labs Engineer",
+      company: "Yield.xyz",
+      period: "Jan 2026 - Present",
+      type: "Full-Time",
+      description: "Working on DeFi research, analytics, and risk frameworks alongside early product prototyping and technical experimentation.",
+      highlights: [
+        "Produced and edited product demo videos for marketing campaigns across LinkedIn and Twitter",
+        "Developed customer case studies and success stories for publication on the company website",
+        "Conducted research on company and client performance metrics to support internal analysis and strategy",
+        "Worked on risk parameters and metadata frameworks supporting APY and TVL calculation logic"
+      ],
+      techStack: ["Solidity", "Javascript"],
+    },
+    {
       role: "DeFi Software Engineer",
       company: "GlueX Protocol",
       period: "Jan 2025 - Aug 2025",
