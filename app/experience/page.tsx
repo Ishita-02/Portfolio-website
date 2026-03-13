@@ -7,12 +7,13 @@ export default function ExperiencePage() {
       type: "Full-Time",
       description: "Working on DeFi research, analytics, and risk frameworks alongside early product prototyping and technical experimentation.",
       highlights: [
-        "Produced and edited product demo videos for marketing campaigns across LinkedIn and Twitter",
-        "Developed customer case studies and success stories for publication on the company website",
-        "Conducted research on company and client performance metrics to support internal analysis and strategy",
-        "Worked on risk parameters and metadata frameworks supporting APY and TVL calculation logic"
+        "Contributed to AI agent infrastructure including Open Cloud Skills, MCP server integrations, and cloud plugins for secure API interactions",
+        "Performed QA testing for company DeFi products, validating transaction flows, repayment behavior, and metadata correctness",
+        "Designed and validated metadata and risk parameters supporting APY and TVL calculation pipelines",
+        "Analyzed protocol and client performance metrics to support internal product and strategy decisions",
+        "Researched architecture for x402 payment integration with MCP APIs for agent-driven payment execution"
       ],
-      techStack: ["Solidity", "Javascript"],
+      techStack: ["Solidity", "Typescript", "AI Agents", "MCP"],
     },
     {
       role: "DeFi Software Engineer",
