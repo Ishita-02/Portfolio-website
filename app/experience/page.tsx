@@ -7,7 +7,7 @@ export default function ExperiencePage() {
       type: "Full-Time",
       description: "Working on DeFi research, analytics, and risk frameworks alongside early product prototyping and technical experimentation.",
       highlights: [
-        "Contributed to AI agent infrastructure including Open Cloud Skills, MCP server integrations, and cloud plugins for secure API interactions",
+        "Contributed to AI agent infrastructure including OpenClaw Skills, MCP server integrations, and claude plugins for secure API interactions",
         "Performed QA testing for company DeFi products, validating transaction flows, repayment behavior, and metadata correctness",
         "Designed and validated metadata and risk parameters supporting APY and TVL calculation pipelines",
         "Analyzed protocol and client performance metrics to support internal product and strategy decisions",
