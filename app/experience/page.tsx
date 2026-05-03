@@ -7,11 +7,11 @@ export default function ExperiencePage() {
       type: "Full-Time",
       description: "Working on DeFi research, analytics, and risk frameworks alongside early product prototyping and technical experimentation.",
       highlights: [
-        "Contributed to AI agent infrastructure including OpenClaw Skills, MCP server integrations, and claude plugins for secure API interactions",
+        "Led end-to-end development and launch of an AI agent ecosystem (MCP server, Claude plugins, and agent skills), including partner-integrated skills and a builder skill enabling users to create custom workflows and applications.",
         "Performed QA testing for company DeFi products, validating transaction flows, repayment behavior, and metadata correctness",
         "Designed and validated metadata and risk parameters supporting APY and TVL calculation pipelines",
         "Analyzed protocol and client performance metrics to support internal product and strategy decisions",
-        "Researched architecture for x402 payment integration with MCP APIs for agent-driven payment execution"
+        "Created client-facing technical documentation, demos, and onboarding materials, supporting partner integrations and improving product adoption."
       ],
       techStack: ["Solidity", "Typescript", "AI Agents", "MCP"],
     },
