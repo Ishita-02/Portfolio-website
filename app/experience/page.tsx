@@ -7,11 +7,11 @@ export default function ExperiencePage() {
       type: "Full-Time",
       description: "Working on DeFi research, analytics, and risk frameworks alongside early product prototyping and technical experimentation.",
       highlights: [
-        "Led end-to-end development and launch of an AI agent ecosystem (MCP server, Claude plugins, and agent skills), including partner-integrated skills and a builder skill enabling users to create custom workflows and applications.",
-        "Performed QA testing for company DeFi products, validating transaction flows, repayment behavior, and metadata correctness",
-        "Designed and validated metadata and risk parameters supporting APY and TVL calculation pipelines",
-        "Analyzed protocol and client performance metrics to support internal product and strategy decisions",
-        "Created client-facing technical documentation, demos, and onboarding materials, supporting partner integrations and improving product adoption."
+        "Led end-to-end development and launch of an AI agent ecosystem (MCP server, Claude plugins, and agent skills), including partner-integrated skills and a builder system enabling users to create custom workflows and applications.",
+        "Owned end-to-end QA validation for DeFi products, testing transaction flows, and metadata correctness prior to release.",
+        "Designed and validated risk parameters and yield models (APY/TVL) by cross-referencing protocol and partner data, ensuring accuracy of product metrics.",
+        "Analyzed protocol and client-level performance metrics to inform product decisions and internal strategy.",
+        "Created client-facing documentation, demos, and onboarding materials to support partner integrations and improve product adoption."
       ],
       techStack: ["Solidity", "Typescript", "AI Agents", "MCP"],
     },
