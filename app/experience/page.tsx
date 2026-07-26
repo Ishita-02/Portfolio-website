@@ -10,9 +10,8 @@ export default function ExperiencePage() {
         "Led end-to-end development and launch of an AI agent ecosystem (MCP server, Claude plugins, and agent skills), including partner-integrated skills and a builder system enabling users to create custom workflows and applications.",
         "Integrated x402 payment support into the MCP server, enabling paid AI tool interactions and supporting monetized agent workflows.",
         "Owned end-to-end QA validation for DeFi products, testing transaction flows, and metadata correctness prior to release.",
-        "Designed and validated risk parameters and yield models (APY/TVL) by cross-referencing protocol and partner data, ensuring accuracy of product metrics.",
-        "Analyzed protocol and client-level performance metrics to inform product decisions and internal strategy.",
-        "Created client-facing documentation, demos, and onboarding materials to support partner integrations and improve product adoption."
+        "Owned partner integrations from onboarding to launch by creating client-facing documentation, implementation guides, demos, and technical resources that improved developer experience and product adoption.",
+        "Collaborated with engineering, product, and partner teams to drive feature releases, resolve integration issues, and ensure successful end-to-end product launches."
       ],
       techStack: ["Solidity", "Typescript", "AI Agents", "MCP"],
     },
