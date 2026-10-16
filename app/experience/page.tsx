@@ -8,9 +8,8 @@ export default function ExperiencePage() {
       description: "Working on DeFi research, analytics, and risk frameworks alongside early product prototyping and technical experimentation.",
       highlights: [
         "Owned end-to-end development and launch of Yield.xyz’s AI agent infrastructure, building and testing MCP integrations (x402 routing, Circle Gateway) and developing agent skills on top of MCP; partnered with wallet providers and clients to build, QA, and launch integrations, and led launch enablement through product demos, integration guides, technical documentation, and marketing content to drive developer and partner adoption.",
-        "Owned end-to-end product development of Plutus, an AI-powered yield management product, from defining product requirements and prioritizing features to designing user flows, coordinating frontend and backend implementation, and leading QA and launch readiness. Worked closely with developers to translate product ideas into technical specifications, validate execution flows, and resolve issues before production.",
-        "Owned end-to-end QA validation for DeFi products, testing transaction flows, and metadata correctness prior to release.",
-        "Owned partner integrations from onboarding to launch by creating client-facing documentation, implementation guides, demos, and technical resources that improved developer experience and product adoption.",
+        "Led product development of Plutus, an AI-powered yield management product, from defining requirements and prioritizing features to designing user flows, coordinating frontend and backend implementation, and driving QA and launch readiness; translated product ideas into technical specifications, validated execution flows, and resolved issues before production.",
+        "Owned end-to-end QA for Yield.xyz’s DeFi products, validating every new yield integration and new feature releases across existing products before production; tested APIs, widget flows, transaction execution, and metadata accuracy for the Borrow and Perps launches.",
         "Collaborated with engineering, product, and partner teams to drive feature releases, resolve integration issues, and ensure successful end-to-end product launches."
       ],
       techStack: ["Solidity", "Typescript", "AI Agents", "MCP"],
